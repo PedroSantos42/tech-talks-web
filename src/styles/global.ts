@@ -6,13 +6,18 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: 0;
-        outline: 0;
     }
 
     body {
-        background: #312E38;
-        color: #FFF;
+        height: 100vh;
         -webkit-font-smoothing: antialiased;
+        
+        color: #FFF;
+        background: #312E38;
+    }
+
+    :root {
+        font-size: 62.5%;
     }
 
     body, input, button {
