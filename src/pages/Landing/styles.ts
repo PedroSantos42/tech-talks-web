@@ -1,8 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
-    width: 100vw;
-    height: 100vh;
+    width: 90vw;
+    max-width: 700px;
 
     display: flex;
     align-items: center;
@@ -16,9 +16,6 @@ export const Content = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    width: 100%;
-    max-width: 700px;
 `;
 
 const appearFromDownToUp = keyframes`
@@ -50,7 +47,7 @@ export const AnimationContainer = styled.div`
         font-size: 2.6rem;
         line-height: 4.6rem;
     }
-    
+
     .headline main h1 {
         font-size: clamp(4rem, 8vw, 8.4rem);
     }
