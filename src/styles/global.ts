@@ -8,6 +8,7 @@ export default createGlobalStyle`
     --color-primary-light: #916BEA;
 
     --color-box-base: #FFFFFF;
+    --color-box-hover: #FAFAFC;
 
     --color-gray: #6A6180;
     --color-gray-lighter: #9C98A6;
@@ -41,7 +42,7 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
 
     color: #FFF;
-    background: var(--color-primary-dark);
+    background-color: var(--color-text-base);
   }
 
   #root {

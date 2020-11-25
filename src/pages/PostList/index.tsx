@@ -1,5 +1,4 @@
 import React from 'react';
-import { FiActivity, FiSearch } from 'react-icons/fi';
 
 import { Container } from './styles';
 
@@ -8,7 +7,7 @@ import coverImg from '../../assets/background-cover.jpg';
 import PageHeader from '../../components/PageHeader'
 import PostItem from '../../components/PostItem'
 
-const Posts: React.FC = () => (
+const PostList: React.FC = () => (
   <Container>
     <PageHeader title="Postagens">
       <img
@@ -28,4 +27,4 @@ const Posts: React.FC = () => (
   </Container>
 )
 
-export default Posts;
+export default PostList;

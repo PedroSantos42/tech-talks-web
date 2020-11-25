@@ -1,11 +1,21 @@
 import styled from 'styled-components';
 
 export const Container = styled.article`
-    background: var(--color-box-base);
-    border: 1px solid var(--color-line-in-white);
-    border-radius: 0.8rem;
-    margin: 2.4rem 1.2rem;
-    overflow: hidden;
+  background: var(--color-box-base);
+  border-radius: 0.8rem;
+  margin: 2.4rem 1.2rem 0;
+  overflow: hidden;
+
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+  header:hover {
+    background: var(--color-primary-light);
+
+    img {
+      border: 0.16rem solid var(--color-line-in-white);
+    }
+  }
 
   header {
     padding: 3.2rem 2rem;
@@ -18,9 +28,10 @@ export const Container = styled.article`
   }
 
   header img {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
+    width: 30%;
+    height: 6rem;
+    border-radius: 0.8rem;
+    object-fit: cover;
   }
 
   header div strong {
@@ -43,7 +54,7 @@ export const Container = styled.article`
       padding: 3.2rem;
     }
 
-    strong {
+    strong span {
       display: initial;
       margin-left: 1.6rem;
     }
