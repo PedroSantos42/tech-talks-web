@@ -43,30 +43,47 @@ export const Container = styled.div`
     color: var(--color-text-title);
   }
 
+  .main-cover {
+    margin-top: 2.4rem;
+    width: 100%;
+    border-radius: 1.8rem;
+    overflow: hidden;
+    padding: 1.2rem;
+  }
+
   @media (min-width: 700px) {
+    height: 340px;
 
-  height: 340px;
+    .header-content .main-cover {
+      padding: 0;
+      border-radius: 1.2rem;
+    }
 
-  .page-header .top-bar-container {
-    max-width: 1100px;
+    .page-header .top-bar-container {
+      max-width: 1100px;
+    }
+
+    .page-header .header-content {
+      flex: 1;
+      max-width: 740px;
+      margin: 0 auto;
+      padding-bottom: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .page-header .header-content strong {
+      font: 700 4.2rem Roboto Slab;
+      align-self: center;
+      padding-left: 0;
+      max-width: 350px;
+    }
+
+    .main-cover {
+      padding: 0;
+      border-radius: 1.2rem;
+    }
   }
-
-  .page-header .header-content {
-    flex: 1;
-    max-width: 740px;
-    margin: 0 auto;
-    padding-bottom: 48px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .page-header .header-content strong {
-    font: 700 4.2rem Roboto Slab;
-    align-self: center;
-    padding-left: 0;
-    max-width: 350px;
-  }
-}
 `;

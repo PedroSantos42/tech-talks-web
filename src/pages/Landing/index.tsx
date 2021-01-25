@@ -29,6 +29,6 @@ const Landing: React.FC = () => (
       </AnimationContainer>
     </Content>
   </Container>
-)
+);
 
 export default Landing;

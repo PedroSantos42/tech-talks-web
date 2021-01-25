@@ -2,29 +2,23 @@ import React from 'react';
 
 import { Container } from './styles';
 
-import coverImg from '../../assets/background-cover.jpg';
-
-import PageHeader from '../../components/PageHeader'
-import PostItem from '../../components/PostItem'
+import Header from '../../components/Header';
+import PostItem from '../../components/PostItem';
 
 const PostList: React.FC = () => (
   <Container>
-    <PageHeader title="Postagens">
-      <img
-        src={coverImg}
-        alt="Capa da postagem principal"
-        className="main-cover"
-      />
-    </PageHeader>
+    <Header title="Postagens" />
 
     <main>
-      <PostItem title="Post 00" />
-      <PostItem title="Post 01" />
-      <PostItem title="Post 02" />
-      <PostItem title="Post 03" />
-      <PostItem title="Post 04" />
+      <PostItem title="Java Spring Boot" />
+      <PostItem title="Backend" />
+      <PostItem title="Frontend e UX" />
+      <PostItem title="DevOps" />
+      <PostItem title="Dicas de Engenharia" />
+      <PostItem title="Ofertas de trabalho" />
+      <PostItem title="Gestão humanizada" />
     </main>
   </Container>
-)
+);
 
 export default PostList;

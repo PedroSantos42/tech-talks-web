@@ -11,6 +11,6 @@ const Routes: React.FC = () => (
     <Route path="/posts" component={PostList} />
     <Route path="/post" component={Post} />
   </Switch>
-)
+);
 
 export default Routes;
